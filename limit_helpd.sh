@@ -16,10 +16,7 @@ do
                 # If this CPU is greater than the one configured, kill the process and add a log entry.
                 if [ $HELPD_CPU_TIME -gt $LIMIT_SECONDS ]
                 then
-                        kill -15 $HELPD_PID &&
-
-                        # Add a log entry for this operation.
-                        echo $(date) KILLED helpd pid=$HELPD_PID cputime=$HELPD_CPU_TIME limit=$LIMIT_SECONDS >> $LOG_FILE
+                        kill -15 $HELPD_PID && echo $(date) KILLED helpd pid=$HELPD_PID cputime=$HELPD_CPU_TIME limit=$LIMIT_SECONDS >> $LOG_FILE
                 fi
         fi
 
