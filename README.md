@@ -22,5 +22,10 @@ Afterwards, copy the "plist" file to "~/Library/LaunchAgents" and then execute:
 
 You can check in the log file (/tmp/limit_helpd.log) if it's working.
 
+It is possible to modify both input arguments to the script:
+
+- LIMIT_SECONDS: how many seconds is the helpd process allowed to use CPU time.
+- WAIT_TIME_SECONDS: how many seconds to wait between checks.
+
 ## Notes
 The script is extremely simple in what it does. It does not even check the input arguments (to do :-)
