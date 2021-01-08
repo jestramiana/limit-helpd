@@ -14,7 +14,7 @@ For more information about this issue in Big Sur, see:
 https://forums.macrumors.com/threads/helpd-process-problem.2276211
 
 ## Usage
-Just copy the "limit_helpd.sh" script to "/usr/local/bin" on your Mac and ensure it has the executable bit set.
+Just copy (or link) the "limit_helpd.sh" script to "/usr/local/bin" on your Mac and ensure it has the executable bit set.
 
 Afterwards, copy the "plist" file to "~/Library/LaunchAgents" and then execute:
 
