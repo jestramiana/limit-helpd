@@ -24,8 +24,14 @@ You can check in the log file (/tmp/limit_helpd.log) if it's working.
 
 It is possible to modify both input arguments to the script:
 
-- LIMIT_SECONDS: how many seconds of CPU time is any helpd process allowed to use.
-- WAIT_TIME_SECONDS: how many seconds to wait between checks.
+- LIMIT_SECONDS: how many seconds of CPU time is any helpd process allowed to use. By default, it is 10 seconds.
+- WAIT_TIME_SECONDS: how many seconds to wait between checks. By default, it is 5 seconds.
+
+```
+        <string>10</string>
+        <string>5</string>
+```
+
 
 ## Notes
 The script is extremely simple in what it does. It does not even check the input arguments (to do :-)
