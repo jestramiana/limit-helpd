@@ -13,7 +13,7 @@ do
                 # A process exists => Calculate its CPU time.
                 HELPD_CPU_TIME=$(printf '%.*f\n' 0 `ps -p $HELPD_PID -o cputime 2> /dev/null | tail -n 1 | tr -d "TIME" | xargs | awk -F'[: ]+' '/:/ {t=$2+60*$1; print t}'`)
 
-                # If this CPU is greater than the one configured, kill the process and add a log entry.
+                # If this CPU time is greater than the allowed one, kill the process and add a log entry.
                 if [ $HELPD_CPU_TIME -gt $LIMIT_SECONDS ]
                 then
                         kill -15 $HELPD_PID && echo $(date) KILLED helpd pid=$HELPD_PID cputime=$HELPD_CPU_TIME limit=$LIMIT_SECONDS >> $LOG_FILE
