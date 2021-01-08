@@ -24,7 +24,7 @@ You can check in the log file (/tmp/limit_helpd.log) if it's working.
 
 It is possible to modify both input arguments to the script:
 
-- LIMIT_SECONDS: how many seconds is the helpd process allowed to use CPU time.
+- LIMIT_SECONDS: how many seconds of CPU time is any helpd process allowed to use.
 - WAIT_TIME_SECONDS: how many seconds to wait between checks.
 
 ## Notes
