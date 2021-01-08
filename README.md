@@ -21,3 +21,6 @@ Afterwards, copy the "plist" file to "~/Library/LaunchAgents" and then execute:
 `launchctl load ~/Library/LaunchAgents/local.limit-helpd.plist`
 
 You can check in the log file (/tmp/limit_helpd.log) if it's working.
+
+## Notes
+The script is extremely simple in what it does. It does not even check the input arguments (to do :-)
