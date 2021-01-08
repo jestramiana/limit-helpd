@@ -2,6 +2,7 @@
 Script to limit and control rogue "helpd" processes in macOS Big Sur (11.1)
 
 TIP #1: It could also be used for any other process, by simply parametrizing the process name.
+
 TIP #2: Although this script is tested to run on macOS 11.1, it should also work in some other UNIX-like OSes, like Linux or BSD.
 
 ## Explanation
